@@ -3873,8 +3873,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url("images/animated_background1.gif");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
