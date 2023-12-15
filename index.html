@@ -1,279 +1,484 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-
-		<title>Rachana Kallada Jayaraj - Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	
-	<body class="is-preload">
-
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">About Me</a></li>
-							<li><a href="#one">Experience</a></li>
-							<li><a href="#two">Education</a></li>
-							<li><a href="#three">Blogs</a></li>
-							<li><a href="#four">Projects</a></li>
-							<li><a href="#five">Skills</a></li>
-							<li><a href="#six">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1 style = "text-align: center">Rachana Kallada Jayaraj </h1>
-							
-								<p style = "text-align: center">Hello! I'm a dedicated and enthusiastic software engineer with deep love for the world of technology. 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rachana Kallada Jayaraj</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rachana Kallada Jayaraj</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Rachana Kallada Jayaraj profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rachana Kallada Jayaraj</h1>
+        <p class="section__text__p2">Fullstack Developer</p>
+        <p class="section__text__p2">Cloud Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rachana-kallada-jayaraj/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/rachkj'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/3.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <h4>5 years</h4>
+              <p>Systems Engineer - Tata Consultancy Services <br /> Cloud Developer II - Hewlett Packard Enterprise </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor's in Computer Science & Engineering<br />Master's in Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Hello! I'm a dedicated and enthusiastic software engineer with deep love for the world of technology. 
 								I'm on a mission to harness the power of code to create innovative solutions that make a positive impact on people's lives. I thrive in collaborative environments, valuing teamwork and effective communication. <br><br>
 					
 								My experience in technology includes 5 years of professional expertise in software engineering and cloud development. 
 								Currently pursuing a Master's in Computer Science at Northeastern University, Boston, I recognize the importance of continuous learning in this rapidly evolving world. 
 								I'm committed to staying updated with the latest technologies, best practices, and industry trends to ensure that I can make a meaningful impact in the ever-changing landscape of software engineering. <br>
                                 				<ul style = "text-align: center; list-style: none">
-                               			 			<li><a href="https://drive.google.com/file/d/1kqOq_CQulKzFibdr_P1qJq3HH0FFWjwT/view?usp=sharing" class="button scrolly">View Resume</a></li>
-								</ul>
-						</div>
-					</section>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GoLang</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bash</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JUnit</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cucumber</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Apache Kafka</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Terraform</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>REST API</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cloud Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kubernetes</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HPE Greenlake Cloud</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/db.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Smart City Management System</h2>
+            <p>User-friendly Flask-based web app with SQL Server, enabling city administrators and citizens 
+              to manage smart city components such as surveillance cameras, sensors, WiFi zones, and smart signals. <br /><br /><br />
+              Visualization and report generation on the GUI for the smart city data.</p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/lb.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Load Balancer Manager</h2>
+            <p> Developed a cutting-edge application on the HPE GreenLake cloud, enabling external customers 
+              to effortlessly access and manage their Kubernetes clusters.  <br /> <br /> <br /> 
+              Implemented dynamic Nginx load balancer deployment, updating configurations to enhance security and eliminate the need for SSH credentials. <br />
 
-				<!-- One -->
-			
-				<section id="one" class="wrapper style3 spotlights">
-
-						<div class = "inner">
-							<div>
-								<h2 style = "text-align: center">Experience</h2>
-							</div>
-						</div>
-					<section>
-						<div class="content">
-							<div class="inner">
-								<h3>Cloud Developer II</h3>
-								<h4>Hewlett Packard Enterprise</h4>
-                                                                <p>GreenLake Cloud Services R&D Department<br>
-            							Jun 2021 - Aug 2023
-								</p>
-
-       								 <ul>
-           								 <li>Received Star Point recognition three times during my tenure for a "Commit and Go" attitude, achieving the development, deployment, and testing of deliverables within the committed timeline.</li>
-           								 <li>Involved in requirements analysis, software design of on-premise and SaaS components, code development, and unit and functional testing. Deployed components in both development and production environments.</li>
-           								 <li>Extensively used GitHub and DevOps tools to maintain multiple iterations of the code through multiple enhancements.</li>
-           								 <li>Gave sprint demos and actively participated in design and defect resolution discussions with dependent teams, leads, and architects.</li>
-          								 <li>Engineered user-friendly Terraform providers for creating, deleting, and scaling operations on Kubernetes clusters. Wrote blogs to help customers better understand the process.</li>
-            								 <li>Member of the GreenLake Fun Team with the privilege of emceeing and hosting numerous events at Hewlett Packard Enterprise.</li>
-       								 </ul>
-										
-							</div>
-							<div class="inner">
-								<h3>Systems Engineer</h3>
-								<h4>Tata Consultancy Services</h4>
-                                                                <p>IOT Department (Client: Nielsen Holdings)<br>
-		  						Oct 2018 - Jun 2021
-								</p>
-									
-								<ul>	
-									<li> Implemented an efficient data monitoring and uploading system using Kafka streaming and AWS S3 storage buckets, complemented by monitoring through Athena queries. </li>
-									<li> This initiative led to an impressive 16% improvement in data processing times. Lastly, I contributed to the development of extensive functional tests for applications written in Go and Java, employing the Cucumber framework and Mockito to enhance the testing process.</li>
-								</ul>
-								
-							</div>
-						</div>
-					</section>
-				</section>
-
-				<!-- two -->
-				<section id="two" class="wrapper style1 spotlights">
-
-					<div class = "inner">
-						<div>
-							<h2 style = "text-align: center">Education</h2>
-						</div>
-					</div>
-					<section>
-						<div class="content">
-							<div class="inner">
-								<h3>Northeastern University, Boston, MA</h3>
-								<h4>Master of Science in Computer Science</h4>
-								Sep 2023 - May 2025 <br><br><br><br>
-							</div>
-
-							<div class="inner">
-								<h3>Dr. Ambedkar Institute of Technology, Bengaluru, India</h3>
-								<h4>Bachelor of Engineering in Computer Science and Engineering</h4>
-								Aug 2014 - Aug 2018<br>
-								GPA: 4.0
-							</div>
-						</div>
-					</section>
-						
-				</section>
-
-                                <!-- three -->
-                                 <section id="three" class="wrapper style1 spotlights">
-					<div class = "inner">
-						<div>
-							<h2 style = "text-align: center">Blogs</h2>
-						</div>
-					</div>
-					<section>	
-					<div class="content">
-						<div class="inner">
-            						<ul>
-               							<li>
-                   							<a href="https://developer.hpe.com/blog/kubernetes-clusters-as-code-part1/">
-                    								<font style="font-family: sans-serif">Kubernetes Cluster as Code - Part 1</font>
-                   							</a>
-               							 </li>
-                						<li>
-                   							<a href="https://developer.hpe.com/blog/kubernetes-cluster-as-code-part-2/">
-                      								<font style="font-family: sans-serif">Kubernetes Cluster as Code - Part 2</font>
-                    							</a>
-              							</li>
-           						</ul>
-   						</div>
-					</div>
-					</section>
-                                 </section>
-
-				<!-- four -->
-                                 <section id="four" class="wrapper style1 spotlights">
-					<div class = "inner">
-						<div>
-							<h2 style = "text-align: center">Projects</h2>
-						</div>
-					</div>
-					<section>	
-					<div class="content">
-						<div class="inner">
-            						<h4>Smart City Management System</h4>
-                                                                <p> Developed a user-friendly Flask-based web app with SQL Server, enabling city administrators and citizens to manage smart city components such as surveillance cameras, sensors, WiFi zones, and smart signals. 
-									Enabled visualization and report generation on the GUI for the smart city data.<br><br></p>
-							<h4>Load Balancer Manager</h4>
-                                                                <p> Implemented dynamic Nginx load balancer deployment, updating configurations to enhance security and eliminate the need for SSH credentials. 
-									Developed REST API calls for load balancer creation, configuration updates, IP address retrieval, and deletion.<br><br></p>
-							<h4>Containers as a Service on BareMetal</h4>
-                                                                <p> Engineered Go code for enabling users to effortlessly create, delete, and scale BareMetal clusters (KVM master, bare metal worker).
-								Collaborated with a resource orchestrator layer to facilitate essential API calls for deploying bare metal and KVM nodes. Implemented a controller that continually polled the cluster status and reported updates through the GUI to the users. <br><br></p>
-							<h4>Human Intruder Detection System</h4>
-                                                                <p> Designed a robust security solution to enhance safety and protect sensitive areas by automatically identifying and alerting authorities to unauthorized human presence.
-								Installed Raspberry Pi with motion detectors and video cameras for remote surveillance, reducing security response time by 20%. <br><br></p>
-							<h4>Bank Management System</h4>
-                                                                <p> Implemented a scalable MySQL-based bank customer DBMS with comprehensive features, facilitating streamlined operations by simplifying customer transactions and enhancing overall efficiency.<br><br></p>
-   						</div>
-					</div>
-					</section>
-                                 </section>
-
-				<!-- five -->
-				<section id="five" class="wrapper style1 spotlights">
-					<h2 style = "text-align: center"><br />Skills</h2>
-
-						<div class = "inner">
-
-
-							<button type = "button" disabled>Go Programming</button>
-							<button type = "button" disabled>Java</button>
-							<button type = "button" disabled>Python</button>
-
-							<button type = "button" disabled>HTML</button>
-							<button type = "button" disabled>CSS</button>
-							<button type = "button" disabled>Javascript</button>
-								
-							<button type = "button" disabled>Cloud Computing</button>
-							<button type = "button" disabled>Kubernetes</button>
-							<button type = "button" disabled>Docker</button>
-
-							<button type = "button" disabled>Amazon Web Services</button>
-							<button type = "button" disabled>Oracle DB/SQLite/MySQL/SQL Server</button>
-								
-							<button type = "button" disabled>CircleCI</button>
-							<button type = "button" disabled>JFrog</button>
-							<button type = "button" disabled>Helm</button>
-							<button type = "button" disabled>Grafana/Prometheus</button>
-                                                        <button type = "button" disabled>ServiceNow</button>
-                                                        <button type = "button" disabled>ArgoCD</button>
-                                                        <button type = "button" disabled>Kibana</button>
-                                                        <button type = "button" disabled>PagerDuty</button>
-								
-								
-							<button type = "button" disabled>Terraform</button>
-							<button type = "button" disabled>Advanced MS Excel</button>
-
-							<button type = "button" disabled>Go Testing Package</button>
-							<button type = "button" disabled>Cucumber</button>
-						</div>
-
-				</section>
-
-				<!-- six -->
-				<section id="six" class="wrapper style3 fade-up">
-					<div class = "inner">
-						<div>
-							<h2 style = "text-align: center">Contact</h2>
-						</div>
-					</div>
-					
-					<div class="inner">
-							
-						<div class="content">
-							<div>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Email</h3>
-											<a href="https://mail.google.com/mail/u/0/#inbox?compose=new">kalladajayaraj.r@northeastern.edu</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span><a href="tel:+18578691657">+1 (857)-763-7511</a></span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul>
-												<a href="https://github.com/rachkj" i class="fa fa-github-alt"><font style = "font-family: sans-serif"> GitHub</font></a><br />
-												<a href="https://www.linkedin.com/in/rachana-kallada-jayaraj" i class="fa fa-linkedin"><font style = "font-family: sans-serif"> LinkedIn</font></a><br />
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style3 fade-up">
-				<div class="inner">
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+              </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/caas.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Containers as a Service on BareMetal</h2>
+            <p> Engineered Go code for enabling users to effortlessly create, delete, and scale BareMetal clusters. <br /> <br /> <br />
+              Implemented a controller that continually polled the cluster status and reported updates through the GUI to the users.
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/bank.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bank Management System</h2>
+            <p> Implemented a scalable MySQL-based bank customer DBMS with comprehensive features, facilitating streamlined operations by simplifying customer transactions and enhancing overall efficiency. 
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/hids.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Human Intruder Detection System</h2>
+            <p> Designed a robust security solution to enhance safety and protect sensitive 
+              areas by automatically identifying and alerting authorities to unauthorized human presence. <br /> <br /> <br />
+              Installed Raspberry Pi with motion detectors and video cameras for remote surveillance. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:kalladajayaraj.r@northeastern.edu">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/rachana-kallada-jayaraj/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Github Icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/rachkj">Github</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Rachana Kallada Jayaraj. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
