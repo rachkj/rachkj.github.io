@@ -447,6 +447,25 @@ footer p {
     gap: 1rem; /* Adjust spacing between navigation links */
   }
 
-  /* Add similar media queries for other sections and elements as needed */
+  /* Center-align content in sections */
+  section {
+    margin: 0; /* Remove horizontal margin to center-align */
+  }
+
+  .section-container {
+    flex-direction: column; /* Stack section elements vertically for center alignment */
+    align-items: center; /* Center-align section content */
+  }
+
+  .section__pic-container {
+    margin: 0 auto; /* Center-align the profile picture */
+  }
+
+  .section__text {
+    text-align: center; /* Center-align text within sections */
+  }
+
+  /* Add similar styles for other sections and elements as needed */
 }
+
 
