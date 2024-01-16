@@ -47,7 +47,13 @@
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
+
+    #contact,
+    footer,
+    #profile {
+    text-align: center;
+    }
     #contact,
     footer {
       height: 40vh;
