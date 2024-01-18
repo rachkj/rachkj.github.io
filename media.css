@@ -50,17 +50,17 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: auto; /* Set height to auto for flexible height */
   }
   #profile {
-    height: 83vh;
+    height: auto; /* Set height to auto for flexible height */
     margin-bottom: 0;
   }
   article {
     font-size: 1rem;
   }
   footer nav {
-    height: fit-content;
+    height: auto; /* Set height to auto for flexible height */
     margin-bottom: 2rem;
   }
   .about-containers,
@@ -87,8 +87,8 @@
     text-align: center;
   }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
+    width: 100%; /* Make it full width */
+    height: auto; /* Set height to auto for flexibility */
     justify-content: center;
   }
   .section__text__p2 {
