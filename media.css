@@ -13,6 +13,8 @@
   #projects {
     height: fit-content;
     margin-top: 4rem; /* Adjust the margin between sections */
+    padding-top: 4rem; /* Add padding to create space within each section */
+    padding-bottom: 4rem; /* Add padding to create space within each section */
   }
 }
 
