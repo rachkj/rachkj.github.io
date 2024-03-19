@@ -27,6 +27,13 @@
     .section-container {
       display: block;
     }
+    #experience {
+    margin-bottom: 4rem; /* Increase margin to create space */
+    }
+
+   #projects {
+    margin-top: 4rem; /* Increase margin to create space */
+  }
     .arrow {
       display: none;
     }
