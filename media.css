@@ -11,10 +11,11 @@
   #contact,
   #experience,
   #projects {
-    height: fit-content;
+    height: auto; /* Set height to auto to accommodate content */
     margin-top: 4rem; /* Adjust the margin between sections */
-    padding-top: 4rem; /* Add padding to create space within each section */
-    padding-bottom: 4rem; /* Add padding to create space within each section */
+    padding-top: 2rem; /* Add padding to create space within each section */
+    padding-bottom: 2rem; /* Add padding to create space within each section */
+    margin-bottom: 4rem; /* Add margin at the bottom of each section */
   }
 }
 
