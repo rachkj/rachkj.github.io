@@ -289,8 +289,8 @@ section {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 150px; 
-  height: 150px; 
+  width: 200px; 
+  height: 200px; 
   overflow: hidden;
 }
 
@@ -436,7 +436,7 @@ article p {
 /* Projects Section Styling */
 #projects {
   padding: 4rem 2rem;
-  background-color: #f9f9f9;
+  background-color: white;
   text-align: center;
 }
 
