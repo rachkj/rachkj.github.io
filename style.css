@@ -283,28 +283,28 @@ section {
   height: 150px;
 }
 
-/* Ensure the container is centered and handles larger images */
+
 .section_pic-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 300px; /* Adjust this size as needed */
-  height: 300px; /* Adjust this size as needed */
+  width: 150px; 
+  height: 150px; 
   overflow: hidden;
 }
 
-/* Style the image */
+
 .about-pic {
   width: 100%;
   height: auto;
-  border-radius: 0; /* Remove the circular border */
-  object-fit: cover; /* Ensure the image fits nicely */
+  border-radius: 0; 
+  object-fit: cover; 
 }
 
-/* Add a square class for any specific use case */
+
 .square-img {
-  border-radius: 0; /* Ensures the image stays square */
+  border-radius: 0; 
 }
 
 
@@ -433,31 +433,55 @@ article p {
 
 /* PROJECTS SECTION */
 
+/* General Styles for Projects Section */
 #projects {
-  position: relative;
-  margin-top: 4rem;
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+.project-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 1rem;
 }
 
 .project-title {
-  margin: 1rem;
-  color: black;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+.project-details p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
 }
+
 
 /* CONTACT */
 
