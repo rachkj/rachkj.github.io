@@ -332,11 +332,10 @@ section {
   padding: 2rem;
 }
 
-.experience-details-container {
+.experience-details-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .details-container {
@@ -359,14 +358,14 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 1rem;
 }
 
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100px;
+  text-align: center;
+  width: 80px;
 }
 
 .skill-logo {
@@ -376,11 +375,18 @@ article {
   margin-bottom: 0.5rem;
 }
 
+article:hover .skill-logo {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 article p {
   font-size: 0.9rem;
   font-weight: 500;
   color: #555;
+  margin: 0;
 }
+
 
 
 /* PROJECTS SECTION */
